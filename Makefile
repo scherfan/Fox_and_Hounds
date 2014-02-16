@@ -1,14 +1,13 @@
 # Makefile for Fox_and_Hounds
 
-CC=g++
-FILES=
-OUT_EXE=Fox_and_Hounds
-CFLAGS=-c -Wall
+fox_and_hounds: main.o game_board.o
+	g++ -Wall main.o game_board.o -o fox_and_hounds
 
-all: fox_and_hounds
+main.o: main.cpp fox_and_hounds.h
+	g++ -c main.cpp
 
-fox_and_hounds: $(FILES)
-	$(CC) -o $(OUT_EXE) $(FILES)
+game_board.o: game_board.cpp fox_and_hounds.h
+	g++ -c game_board.cpp
 
 clean:
-	-rm -f *.o fox_and_hounds core
+	rm -rf *.o *.cpp~ *.h~ fox_and_hounds core
