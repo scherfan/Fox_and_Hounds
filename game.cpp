@@ -7,12 +7,13 @@
 
 using namespace std;
 
-class Game
+
+Game_Board::Game_Board()
 {
     
 }
 
-void draw_board()
+void Game_Board::draw_board()
 {
     cout << "-------------------------------------------------" << endl;
     cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
@@ -55,4 +56,14 @@ void draw_board()
          << " x|     |x " << "x" << " x|     |" << endl;
     cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
     cout << "-------------------------------------------------" << endl;
+}
+
+void Game_Board::move_fox(char dir1, char dir2)
+{
+    
+}
+
+void Game_Board::move_hound(int hnum, char dir1, char dir2)
+{
+    
 }
