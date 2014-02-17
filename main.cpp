@@ -9,8 +9,15 @@ using namespace std;
 
 int main()
 {
-    for (int i = 0; i < 5; i++)
+    char quit;
+
+    while(true)
     {
-        cout << "Does it work?" << endl;
+        cout << "the game board:" << endl;
+        draw();
+        cout << "Would you like to quit?: (y or n)";
+        cin >> quit;
+        if (quit == 'y')
+            break;
     }
 }
