@@ -4,5 +4,5 @@
 
 #ifndef FOXANDHOUNDS_H
 #define FOXANDHOUNDS_H
-void draw();
+void draw_board();
 #endif

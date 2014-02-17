@@ -14,7 +14,7 @@ int main()
     while(true)
     {
         cout << "the game board:" << endl;
-        draw();
+        draw_board();
         cout << "Would you like to quit?: (y or n)";
         cin >> quit;
         if (quit == 'y')

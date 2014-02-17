@@ -7,32 +7,46 @@
 
 using namespace std;
 
-void draw()
-{
-    cout << "_________________________________________" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "|    |    |    |    |    |    |    |    |" << endl;
-    cout << "-----------------------------------------" << endl;
+//enum 
 
+void draw_board()
+{
+    cout << "-------------------------------------------------" << endl;
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "|     |x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" << " x|" << endl;
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "|x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" << " x|     |" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "|     |x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" << " x|" << endl;
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "|x " << "x" << " x|     |x " << "x" << " x|     |x " << "x"
+         << " x|     |x " << "x" << " x|     |" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "|     |x " << "x" << " x|     |x " << "x" << " x|     |x " 
+         << "x" << " x|     |x " << "x" << " x|" << endl;    
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "|x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" 
+         << " x|     |x " << "x" << " x|     |" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "|     |x " << "x" << " x|     |x " << "x" << " x|     |x " 
+         << "x" << " x|     |x " << "x" << " x|" << endl;
+    cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
+    cout << "-------------------------------------------------" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "|x " << "x" << " x|     |x " << "x" << " x|     |x " << "x" 
+         << " x|     |x " << "x" << " x|     |" << endl;
+    cout << "|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |" << endl;
+    cout << "-------------------------------------------------" << endl;
 }
