@@ -8,18 +8,30 @@
 #ifndef FOXANDHOUNDS_H
 #define FOXANDHOUNDS_H
 
-enum Game_Piece{HOUND1, HOUND2, HOUND3, HOUND4, FOX, EMPTY_SQUARE, INVALID_SQUARE};
-enum Player_Type{PT_FOX, PT_HOUND};
+typedef struct
+{
+    int x;
+    int y;
+    std::string name;
+}Player;
 
+enum Player_Type{PT_FOX, PT_HOUND};
 class Game_Board
 {
 public:
+    std::string *H1;
+    std::string *H2;
+    std::string *H3;
+    std::string *H4;
+    std::string *F;
+
+    
     Game_Board();
     void move_fox(char dir1, char dir2);
     void move_hound(int hnum, char dir1, char dir2);
     void draw_board();
 private:
-    Game_Piece _board[8][8];
+    std::string _board[8][8];
     Player_Type _whose_move;
 };
 #endif
