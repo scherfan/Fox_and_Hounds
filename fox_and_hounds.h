@@ -2,22 +2,22 @@
   Fox_and_hounds .h file.
 */
 
-#include <iostream>
-#include <string>
-
 #ifndef FOXANDHOUNDS_H
 #define FOXANDHOUNDS_H
 
-typedef struct
-{
-    int x;
-    int y;
-    std::string name;
-}Player;
+#include <iostream>
+#include <string>
 
-enum Player_Type{PT_FOX, PT_HOUND};
+
 class Game_Board
 {
+    struct Player
+    {
+        std::string name;
+        int x;
+        int y;
+    };
+
 public:
     std::string *H1;
     std::string *H2;
@@ -32,6 +32,6 @@ public:
     void draw_board();
 private:
     std::string _board[8][8];
-    Player_Type _whose_move;
 };
+
 #endif

@@ -1,12 +1,12 @@
 /*
   Main file.
- */
+*/
 
 #include "fox_and_hounds.h"
 
 using namespace std;
 
-int main(void)
+int main()
 {
     char quit;
     string fox_move;
