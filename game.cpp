@@ -7,15 +7,14 @@
 
 using namespace std;
 
-Game_Board::Game_Board()
+Game_Board:: Game_Board()
 {
-
-    struct Player Fox;
-    struct Player H1;
-    struct Player H2;
-    struct Player H3;
-    struct Player H4;
-
+    Game_Piece Fox;
+    Game_Piece HD1;
+    Game_Piece HD2;
+    Game_Piece HD3;
+    Game_Piece HD4;
+    
     Fox.x = 0;
     Fox.y = 7;
     Fox.name = "Fox";
@@ -56,8 +55,8 @@ Game_Board::Game_Board()
     }
 
    //set up pieces
-    _board[H1.x][H1.y] = H1.name;
-    _board[H2.x][H2.y] = H2.name;
+    _board[H1->x][H1->y] = H1.name;
+    _board[H2->x][H2->y] = H2.name;
     _board[H3.x][H3.y] = H3.name;
     _board[H4.x][H3.y] = H4.name;
     _board[Fox.x][Fox.y] = Fox.name;
@@ -65,6 +64,13 @@ Game_Board::Game_Board()
 
 void Game_Board::draw_board()
 {
+    
+    _board[H1->x][H1->y] = H1.name;
+    _board[H2.x][H2.y] = H2.name;
+    _board[H3.x][H3.y] = H3.name;
+    _board[H4.x][H3.y] = H4.name;
+    _board[Fox.x][Fox.y] = Fox.name;
+
     cout << "-------------------------------------------------" << endl;
     cout << "|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|" << endl;
     cout << "|     |x" << _board[1][0] << "x|     |x" << _board[3][0] 
@@ -114,9 +120,30 @@ void Game_Board::draw_board()
   bl = x:i-1 y:i+1
   br = x:i+1 y:i+1
 */
-void Game_Board::move_fox(char dir1, char dir2)
+void Game_Piece::move_fox(char dir1, char dir2)
 {
-    
+    if (dir1 == 'f' && dir2 == 'l')
+    {
+        Fox->x--;
+        Fox.y--;
+    }
+    else if (dir1 == 'f' && dir2 == 'r')
+    {
+        Fox.x++;
+        Fox.y--;
+    }
+    else if (dir1 == 'b' && dir2 == 'l')
+    {
+        Fox.x--;
+        Fox.y++;
+    }
+    else if (dir1 == 'b' && dir2 == 'r')
+    {
+        Fox.x++;
+        Fox.y++;
+    }
+    else
+        cout << "error" << endl;
 }
 
 /*
@@ -124,7 +151,7 @@ void Game_Board::move_fox(char dir1, char dir2)
   fl = x:i+1 y:i+1
   fr = x:i-1 y:i+1
 */
-void Game_Board::move_hound(int hnum, char dir1, char dir2)
+void Game_Piece::move_hound(int hnum, char dir1, char dir2)
 {
-    
+    //Deals with moving hounds
 }

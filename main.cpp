@@ -9,8 +9,7 @@ using namespace std;
 int main()
 {
     char quit;
-    string fox_move;
-    string hound_move;
+    string fox_move, hound_move;
     char f1, f2, h1, h2;
     int hnum;
    
