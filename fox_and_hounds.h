@@ -9,24 +9,18 @@
 #include <string>
 
 
-class Game_Board
-{
-public:
-    Game_Board();
-    void draw_board();
-private:
-    std::string _board[8][8];
-};
-class Game_Piece : public Game_Board
+class Game_Piece
 {
 public:
     Game_Piece();
-    void move_fox(Game_Board b, char dir1, char dir2);
-    void move_hound(Game_Board b, int hnum, char dir1, char dir2);
-public:
+    void draw_board();
+    void move_fox(char dir1, char dir2);
+    void move_hound(int hnum, char dir1, char dir2);
+private:
+    std::string _board[8][8];
     int x;
     int y;
     std::string Name;
-}
+};
 
 #endif

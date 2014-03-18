@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Game_Board:: Game_Board()
+Game_Piece::Game_Piece()
 {
     Game_Piece Fox;
     Game_Piece HD1;
@@ -55,14 +55,14 @@ Game_Board:: Game_Board()
     }
 
    //set up pieces
-    _board[H1->x][H1->y] = H1.name;
-    _board[H2->x][H2->y] = H2.name;
+    _board[H1.x][H1.y] = H1.name;
+    _board[H2.x][H2->y] = H2.name;
     _board[H3.x][H3.y] = H3.name;
     _board[H4.x][H3.y] = H4.name;
     _board[Fox.x][Fox.y] = Fox.name;
 }
 
-void Game_Board::draw_board()
+void Game_Piece::draw_board()
 {
     
     _board[H1->x][H1->y] = H1.name;

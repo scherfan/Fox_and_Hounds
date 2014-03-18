@@ -13,7 +13,7 @@ int main()
     char f1, f2, h1, h2;
     int hnum;
    
-    Game_Board b;
+    Game_Piece b;
 
     cout << endl << "FOX AND HOUNDS" << endl << endl;
     cout << "Player 1 is the Fox and player 2 is the Hounds" << endl;
@@ -25,7 +25,7 @@ int main()
              << "br = backwards right" << endl;
         cin >> fox_move;
         if(fox_move.length() > 2)
-            break;
+            break; // do error handling later (try/catch)
         else
         {
             f1 = fox_move[0];
@@ -39,7 +39,7 @@ int main()
              << "fl = forward left" << endl << "fr = forward right" << endl;
         cin >> hound_move;
         if(hound_move.length() > 3)
-            break;
+            break; // do error handling (try/catch)
         else
         {
             hnum = hound_move[0];
