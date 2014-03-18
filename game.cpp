@@ -65,7 +65,7 @@ Game_Piece::Game_Piece()
 void Game_Piece::draw_board()
 {
     
-    _board[H1->x][H1->y] = H1.name;
+    _board[H1.x][H1.y] = H1.name;
     _board[H2.x][H2.y] = H2.name;
     _board[H3.x][H3.y] = H3.name;
     _board[H4.x][H3.y] = H4.name;
