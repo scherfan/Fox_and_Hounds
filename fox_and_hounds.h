@@ -7,12 +7,18 @@
 
 #include <iostream>
 #include <string>
+#include <ncurses.h>
 
 
-class Game_Piece
+void init_board(std::string board[][8]);
+void draw_board();
+void init();
+
+
+class Game
 {
 public:
-    Game_Piece();
+    Game();
     void draw_board();
     void move_fox(char dir1, char dir2);
     void move_hound(int hnum, char dir1, char dir2);
@@ -21,6 +27,6 @@ private:
     int x;
     int y;
     std::string Name;
-};
+    };
 
 #endif

@@ -8,50 +8,42 @@ using namespace std;
 
 int main()
 {
-    char quit;
-    string fox_move, hound_move;
-    char f1, f2, h1, h2;
-    int hnum;
-   
-    Game_Piece b;
+    // initialize ncurses screen
+    init();
 
-    cout << "\nFOX AND HOUNDS\n\n";
-    cout << "Player 1 is the Fox and player 2 is the Hounds\n";
-    b.draw_board();
+    // Print title and initial instructions
+    printw("FOX and HOUNDS\n\n");
+    printw("Press \"q\" or \"Q\" to exit.\n\n\n");
+
+    // Let player start play, clear screen and start
+    printw("Press and key to start.");
+    int ch = getch();
+    clear();
+    draw_board();
+    ch = getch();
+    printw("Player 1 is the Fox and player 2 is the Hounds.\n");
+
+    int key_in;
     while(true)
     {
-        cout << "To move the Fox just type:" << endl << "fl = forward left" << endl
-             << "fr = forward right" << endl << "bl = backwards left" << endl
-             << "br = backwards right" << endl;
-        cin >> fox_move;
-        if(fox_move.length() > 2)
-            break; // TODO: error handling later (try/catch)
-        else
+        key_in = getch();
+        if(key_in == 'q' || key_in == 'Q')
         {
-            f1 = fox_move[0];
-            f2 = fox_move[1];
-            cout << f1 << " " << f2 << endl;
-        }
-        //execute fox's move
-        b.move_fox(f1, f2);
-        b.draw_board();
-        cout << "To move a Hound just type the number of the Hound and:" << endl
-             << "fl = forward left" << endl << "fr = forward right" << endl;
-        cin >> hound_move;
-        if(hound_move.length() > 3)
-            break; // do error handling (try/catch)
-        else
-        {
-            hnum = hound_move[0];
-            h1 = hound_move[1];
-            h2 = hound_move[2];
-        }
-        //execute hound's move
-        b.move_hound(hnum, h1, h2);
-        b.draw_board();
-        cout << "Would you like to quit?: (y or n)";
-        cin >> quit;
-        if (quit == 'y')
+            printw("Exiting... bye!\n");
+            endwin();
             break;
+        }
     }
+
+    
+    return 0;
+}
+
+
+void init()
+{
+    initscr();
+    clear();
+    noecho();
+    cbreak();
 }
