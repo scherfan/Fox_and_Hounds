@@ -13,7 +13,7 @@ public:
     Screen();
     //destructor
     ~Screen(); 
-    void print_msg(const char *message);
+    void prnt_msg(const char *message);
     int get_height();
     int get_width();
 };
