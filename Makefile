@@ -2,7 +2,7 @@
 
 # Variables
 CC = g++
-CFLAGS = -Wall -O0 -g -W -lncurses
+CFLAGS = -Wall -O0 -g -W -lncurses -std=c++11
 FILES = Character.cpp Main.cpp Screen.cpp
 OBJ = Character.o Main.o Screen.o
 OUT_EXE = Fox_and_Hounds
