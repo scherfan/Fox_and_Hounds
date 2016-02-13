@@ -19,31 +19,37 @@ int main()
     printw("Press and key to start.");
     int ch = getch();
     clear();
-    draw_board();
-    ch = getch();
     printw("Player 1 is the Fox and player 2 is the Hounds.\n");
 
-    int key_in;
+    
     while(true)
     {
         key_in = getch();
         if(key_in == 'q' || key_in == 'Q')
         {
-            printw("Exiting... bye!\n");
-            endwin();
             break;
         }
+        else
+        {
+            mvaddch(row, col, main_char);
+        }
+        
+
     }
 
-    
+    printw("Exiting... bye!\n");
+    endwin();
+            
     return 0;
 }
 
 
 void init()
 {
-    initscr();
-    clear();
-    noecho();
+    initscr();  //initialize screen
+    clear();    //clears ncurses screen
+    noecho();   //if a letter is input by user, it will not be printed in the terminal
     cbreak();
+    keypad(stdscr, TRUE);
+    curs_set(0); //hides cursor
 }

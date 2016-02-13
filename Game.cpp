@@ -4,20 +4,10 @@
 */
 
 #include "fox_and_hounds.h"
-
+#include "game.h"
 using namespace std;
 
-void init_board(string board[][8])
-{
 
-    for (int i = 0; i < 8; i++)
-    {
-        for (int j = 0; j < 8; j++)
-        {
-            board[i][j] = "xxx";
-        }
-    }
-}
 
 void draw_board()
 { 
