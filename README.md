@@ -9,3 +9,5 @@ past the hounds the fox then wins. If the hounds corner the fox then the hounds
 win. For more detail see: http://en.wikipedia.org/wiki/Fox_games#Fox_and_Hounds
 
 This is a personal project for me to practise coding, C++, using Git and GitHub and doing some stuff that isn't school work.
+
+(This is the old version.)
