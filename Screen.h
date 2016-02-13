@@ -19,6 +19,7 @@ public:
     // width and height getters
     int get_height();
     int get_width();
+    // draws playing board
     void draw_board();
 };
 

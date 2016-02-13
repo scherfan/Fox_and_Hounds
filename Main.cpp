@@ -6,7 +6,6 @@
 #include <ncurses.h>
 
 #include "Screen.h"
-#include "Game.h"
 #include "Character.h"
 
 using namespace std;
@@ -26,6 +25,11 @@ int main()
     clear();
     scr.prnt_msg("Player 1 is the Fox and player 2 is the Hounds.\n");
     scr.draw_board();
+    int tmp_w, tmp_h;
+    tmp_w = scr.get_width();
+    tmp_h = scr.get_height();
+    printw("%d, %d\n", tmp_w, tmp_h);
+    mvaddch(3, 9, 'F');
     ch = getch();
 
    
