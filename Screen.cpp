@@ -36,3 +36,41 @@ int Screen::get_width()
 {
     return _width;
 }
+
+void Screen::draw_board()
+{ 
+    printw("-------------------------------------------------\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("-------------------------------------------------\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("-------------------------------------------------\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("-------------------------------------------------\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("-------------------------------------------------\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("-------------------------------------------------\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("-------------------------------------------------\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("|xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|     |\n");
+    printw("-------------------------------------------------\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("|     |xxxxx|     |xxxxx|     |xxxxx|     |xxxxx|\n");
+    printw("-------------------------------------------------\n");
+
+}

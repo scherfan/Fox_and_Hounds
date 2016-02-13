@@ -25,7 +25,8 @@ int main()
     int ch = getch();
     clear();
     scr.prnt_msg("Player 1 is the Fox and player 2 is the Hounds.\n");
-    
+    scr.draw_board();
+    ch = getch();
 
    
 
