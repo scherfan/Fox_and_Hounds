@@ -15,8 +15,8 @@ int main()
    
     Game_Piece b;
 
-    cout << endl << "FOX AND HOUNDS" << endl << endl;
-    cout << "Player 1 is the Fox and player 2 is the Hounds" << endl;
+    cout << "\nFOX AND HOUNDS\n\n";
+    cout << "Player 1 is the Fox and player 2 is the Hounds\n";
     b.draw_board();
     while(true)
     {
@@ -25,7 +25,7 @@ int main()
              << "br = backwards right" << endl;
         cin >> fox_move;
         if(fox_move.length() > 2)
-            break; // do error handling later (try/catch)
+            break; // TODO: error handling later (try/catch)
         else
         {
             f1 = fox_move[0];
