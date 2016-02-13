@@ -7,7 +7,7 @@
 // constructor, initializes  the nucurses Screen
 Screen::Screen()
 {
-  initscr();  //initialize screen
+    initscr();  //initialize screen
     clear();    //clears ncurses screen
     noecho();   //if a letter is input by user, it will not be printed in the terminal
     cbreak();
@@ -22,17 +22,17 @@ Screen::~Screen()
     endwin();
 }
 
-void prnt_msg(const char *message)
+void Screen::prnt_msg(const char *message)
 {
     printw(message);
 }
 
-int get_height()
+int Screen::get_height()
 {
     return _height;
 }
 
-int get_width()
+int Screen::get_width()
 {
     return _width;
 }

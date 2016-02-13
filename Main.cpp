@@ -1,10 +1,16 @@
 /*
   Main file.
 */
+#include <iostream>
+#include <string>
+#include <ncurses.h>
 
-#include "fox_and_hounds.h"
+#include "Screen.h"
+#include "Game.h"
+#include "Character.h"
 
 using namespace std;
+
 
 int main()
 {
@@ -12,32 +18,18 @@ int main()
     Screen scr;
 
     // Print title and initial instructions
-    prnt_msg("FOX and HOUNDS\n\nPress \"q\" or \"Q\" to exit.\n\n\n");
+    scr.prnt_msg("FOX and HOUNDS\n\nPress \"q\" or \"Q\" to exit.\n\n\n");
 
     // Let player start play, clear screen and start
-    prnt_msg("Press and key to start.\n");
+    scr.prnt_msg("Press and key to start.\n");
     int ch = getch();
     clear();
-    prnt_msg("Player 1 is the Fox and player 2 is the Hounds.\n");
-
+    scr.prnt_msg("Player 1 is the Fox and player 2 is the Hounds.\n");
     
-    while(true)
-    {
-        key_in = getch();
-        if(key_in == 'q' || key_in == 'Q')
-        {
-            break;
-        }
-        else
-        {
-            mvaddch(row, col, main_char);
-        }
-        
 
-    }
+   
 
-    printw("Exiting... bye!\n");
-    endwin();
+
             
     return 0;
 }

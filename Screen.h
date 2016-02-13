@@ -1,6 +1,7 @@
 /*
  * game.cpp header file
  */
+#include <ncurses.h>
 
 #ifndef SCREEN_H
 #define SCREEN_H
@@ -13,7 +14,9 @@ public:
     Screen();
     //destructor
     ~Screen(); 
+    // Print a message to screen
     void prnt_msg(const char *message);
+    // width and height getters
     int get_height();
     int get_width();
 };

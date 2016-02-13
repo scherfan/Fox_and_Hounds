@@ -3,10 +3,10 @@
 # Variables
 CC = g++
 CFLAGS = -Wall -O0 -g -W -lncurses
-FILES = main.cpp game.cpp
-OBJ = main.o game.o
+FILES = Character.cpp Game.cpp Main.cpp Screen.cpp
+OBJ = Character.o Game.o Main.o Screen.o
 OUT_EXE = Fox_and_Hounds
-DEPS = fox_and_hounds.h
+DEPS = Character.h Screen.h Game.h
 
 
 %.o: %.c $(DEPS)

@@ -3,11 +3,7 @@
   pieces.
 */
 
-#include "fox_and_hounds.h"
-#include "game.h"
-using namespace std;
-
-
+#include "Game.h"
 
 void draw_board()
 { 
